@@ -43,6 +43,7 @@ html {
   background-color: #121212;
   color: #e8e8e8;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  z-index: 1;
 }
 h1,
 h2 {
@@ -81,12 +82,31 @@ a {
 a:hover {
   color: #00aaff;
 }
-img,
-video {
+img {
   max-width: 50%;
-  margin: 1em auto;
   border: 1px solid #00aaff;
   box-shadow: 0 0 5px #00aaff;
+  margin: 5px;
+  float: right;
+}
+img.odd {
+  float: left;
+}
+p.even-p {
+  float: left;
+  background-color: #00000066;
+  padding: 10px;
+}
+main.main-bg {
+  background-color: #00000066;
+}
+video {
+  position: fixed;
+  height: 100;
+  z-index: -1 !important;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 p {
   margin: 10px 0;
