@@ -85,6 +85,8 @@ img,
 video {
   max-width: 50%;
   margin: 1em auto;
+  border: 1px solid #00aaff;
+  box-shadow: 0 0 5px #00aaff;
 }
 p {
   margin: 10px 0;
