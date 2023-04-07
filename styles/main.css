@@ -84,8 +84,8 @@ a:hover {
 }
 img {
   max-width: 50%;
-  border: 1px solid #00aaff;
-  box-shadow: 0 0 5px #00aaff;
+  border: 1px solid #00ffff;
+  box-shadow: 0 0 5px #00ffff;
   margin: 5px;
   float: right;
 }
