@@ -11,11 +11,22 @@
     />
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <script type="text/javascript" src="scripts/header.js"></script>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <div class="small-nav">
+          <a class="navbutton" id="nav-hamburger">
+            <img
+              class="navbutton-img"
+              src="media/hamburger.svg"
+              alt="hamburger menu"
+            />
+          </a>
+          <div class="title">Kat Site!</div>
+        </div>
+        <ul id="navul">
           <li><a href="index.html">Resume</a></li>
           <li><a href="excerpt.html">An Excerpt</a></li>
           <li><a href="media.html">Media Demo</a></li>
