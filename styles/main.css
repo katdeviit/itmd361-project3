@@ -1,7 +1,4 @@
 /* Times like these where I *really* miss SCSS/SASS */
-header {
-  margin-bottom: 1em;
-}
 header nav {
   background-color: black;
   clear: both;
@@ -82,21 +79,6 @@ a {
 a:hover {
   color: #00aaff;
 }
-img:not(.navbutton-img) {
-  max-width: 50%;
-  border: 1px solid #00ffff;
-  box-shadow: 0 0 5px #00ffff;
-  margin: 5px;
-  float: right;
-}
-img.odd:not(.navbutton-img) {
-  float: left;
-}
-p.even-p {
-  float: left;
-  background-color: #00000066;
-  padding: 10px;
-}
 main.main-bg {
   background-color: #00000066;
 }
@@ -111,7 +93,6 @@ video {
 p {
   margin: 10px 0;
 }
-
 blockquote {
   padding: 10px;
   margin: 15px 0;
@@ -119,25 +100,45 @@ blockquote {
   background-color: #202020;
   border-left: 2px solid #404040;
 }
-
 .small-nav {
   display: none;
 }
-
 .navbutton {
   float: left;
   cursor: pointer;
   border: 2px solid #ffffff66;
   border-radius: 5px;
 }
-
 .title {
   display: inline-block;
   margin-left: 5px;
   line-height: 40px;
   font-size: 1.25em;
 }
-
+img:not(.navbutton-img) {
+  border: 1px solid #00ffff;
+  box-shadow: 0 0 5px #00ffff;
+  margin: 5px;
+}
+p.even-p {
+  background-color: #00000066;
+  padding: 10px;
+}
+@media (min-width: 600px) {
+  img:not(.navbutton-img) {
+    float: right;
+    max-width: 50%;
+  }
+  img.odd:not(.navbutton-img) {
+    float: left;
+  }
+  p.even-p {
+    float: left;
+  }
+  header {
+    margin-bottom: 1em;
+  }
+}
 @media (max-width: 600px) {
   .small-nav {
     display: block;
