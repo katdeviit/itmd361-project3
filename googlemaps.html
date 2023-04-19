@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Resume</title>
+    <title>Maps</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto"
@@ -15,7 +15,7 @@
     <script type="text/javascript" src="scripts/maps.js"></script>
     <script
       async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?callback=initMap"
     ></script>
   </head>
   <body>
@@ -40,7 +40,9 @@
       </nav>
     </header>
     <main>
-      <div id="map"></div>
+      <div id="map-container">
+        <div id="map"></div>
+      </div>
     </main>
   </body>
 </html>
